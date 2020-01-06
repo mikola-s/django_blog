@@ -3,6 +3,6 @@ from . import views
 
 app_name = 'blog'
 urlpatterns = [
-    path('', views.get_name, name='index'),
+    path('', views.MyFormView.as_view()),
     path('taken/', views.taken, name='taken'),
 ]
