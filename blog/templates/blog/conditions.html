@@ -1,0 +1,15 @@
+{% if data %}
+<h1>Your conditions:</h1>
+<table>
+    {% for cond_name, cond_value in data.items %}
+        <tr>
+        <td>
+            {{ cond_name }}
+        </td>
+        <td>
+            {{ cond_value }}
+        </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endif %}
